@@ -5,25 +5,35 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public float ForwardForce = 200f;
-    public float SideForce = 200f;
+    public float speed = 5.0f;
 
-    // Update is called once per frame
+
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, ForwardForce * Time.deltaTime);
+
+        rb.velocity = new Vector3(0, -5, 0);
+
+        rb.velocity = new Vector3(0, 0, speed);
+        
 
         if (Input.GetKey("d"))
         {
-            rb.AddForce(SideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+             rb.velocity = new Vector3(speed, 0, speed);
         }
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-SideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            rb.velocity = new Vector3(-speed, 0, speed);
         }
-        if(rb.position.y < -2f)
+        if (rb.position.y < -2f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }
+        transform.rotation = Quaternion.identity;
     }
+
+
+
+    
+
 }
+    
