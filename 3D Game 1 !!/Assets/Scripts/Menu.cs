@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
 
-    public void StartGame()
+    public void Endless()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
+    }
+
+
+    public void Levels()
+    {
+        SceneManager.LoadScene(2);
     }
 
 }

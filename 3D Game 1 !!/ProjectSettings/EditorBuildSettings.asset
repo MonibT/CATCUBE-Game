@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/welcome.unity
     guid: be2ba096a36fad84d8839ca15d36b9fe
   - enabled: 1
-    path: Assets/level 01.unity
+    path: Assets/Endless.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/level 02.unity
+    path: Assets/level01.unity
     guid: 1d611d42d292e2341b5496e60b6f6f98
   - enabled: 1
-    path: Assets/level 03.unity
+    path: Assets/level02.unity
     guid: c1d3537c35217d54bbbe790e24bc384b
   - enabled: 1
-    path: Assets/level 04.unity
+    path: Assets/level03.unity
     guid: 58b59788a697c37449405f9727b37d3b
   - enabled: 1
     path: Assets/Credits.unity
